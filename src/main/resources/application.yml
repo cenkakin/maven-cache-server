@@ -1,0 +1,7 @@
+maven-cache-server:
+  baseFolderToStore:
+  storeType:
+
+aws:
+  accessKeyId:
+  secretAccessKey:
