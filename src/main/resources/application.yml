@@ -1,7 +1,15 @@
 maven-cache-server:
-  baseFolderToStore:
-  storeType:
-
+  baseFolderToStore: ${prop.maven-cache-server.baseFolderToStore:./}
+  storeType: ${prop.maven-cache-server.storeType:FILE_SYSTEM}
 aws:
-  accessKeyId:
-  secretAccessKey:
+  accessKeyId: ${prop.aws.accessKeyId:}
+  secretAccessKey: ${prop.aws.secretAccessKey:}
+
+authentication:
+  enabled: ${prop.authentication.enabled}
+
+spring:
+  security:
+    user:
+      name: ${prop.authentication.user.name}
+      password: ${prop.authentication.user.password}
