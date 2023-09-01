@@ -34,7 +34,7 @@ class MavenCacheConfiguration(@Value("\${maven-cache-server.baseFolderToStore}")
         prefix = "maven-cache-server",
         name = ["storeType"],
         havingValue = "FILE_SYSTEM",
-        matchIfMissing = true
+        matchIfMissing = true,
     )
     fun fileSystemMavenCacheFileManager(): MavenCacheFileManager {
         return FileSystemMavenCacheFileManager(baseFolderToUpload)

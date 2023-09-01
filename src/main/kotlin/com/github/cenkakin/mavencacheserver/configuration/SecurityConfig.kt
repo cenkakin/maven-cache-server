@@ -8,11 +8,12 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
 import org.springframework.security.web.SecurityFilterChain
 
-
 @Configuration
 @EnableWebSecurity
 @ConditionalOnProperty(
-    prefix = "authentication", name = ["enabled"], havingValue = "true"
+    prefix = "authentication",
+    name = ["enabled"],
+    havingValue = "true",
 )
 class SecurityConfig {
 

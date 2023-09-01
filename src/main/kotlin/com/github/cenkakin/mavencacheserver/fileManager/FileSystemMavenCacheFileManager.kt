@@ -14,7 +14,7 @@ class FileSystemMavenCacheFileManager(override val baseFolderToStore: String) : 
 
     override fun store(key: String, content: InputStream, contentLength: Long) {
         val file = File("$baseFolderToStore/$key")
-        if(!file.exists()) {
+        if (!file.exists()) {
             file.parentFile.mkdirs()
             file.createNewFile()
         }
