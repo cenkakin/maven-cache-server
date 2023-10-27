@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  web-dav:
+    image: xama/nginx-webdav@sha256:84171a7e67d7e98eeaa67de58e3ce141ec1d0ee9c37004e7096698c8379fd9cf
+    ports:
+      - "80:80"
+    environment:
+      WEBDAV_USERNAME: admin
+      WEBDAV_PASSWORD: admin
+    volumes:
+      - ./:/var/webdav/public
