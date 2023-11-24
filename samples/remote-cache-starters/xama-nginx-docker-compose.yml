@@ -9,4 +9,4 @@ services:
       WEBDAV_USERNAME: admin
       WEBDAV_PASSWORD: admin
     volumes:
-      - ./:/var/webdav/public
+      - ./cache-storage/:/var/webdav/public

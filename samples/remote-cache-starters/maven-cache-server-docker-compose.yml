@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  maven-cache-server:
+    image: ghcr.io/cenkakin/maven-cache-server:latest
+    ports:
+      - "8080:8080"
+    environment:
+      prop.authentication.enabled: true
+      prop.authentication.user.name: admin
+      prop.authentication.user.password: admin
+      prop.maven-cache-server.storeType: FILE_SYSTEM
+      prop.maven-cache-server.baseFolderToStore: ./cache-storage
+    volumes:
+      - ./cache-storage/:/cache-storage
