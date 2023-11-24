@@ -35,3 +35,5 @@ build/
 .vscode/
 
 maven-cache-server-dev/
+Dockerfile
+cache-storage
