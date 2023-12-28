@@ -8,7 +8,8 @@ services:
       authentication.enabled: true
       authentication.user.name: admin
       authentication.user.password: admin
-      maven-cache-server.storeType: FILE_SYSTEM
-      maven-cache-server.baseFolderToStore: ./cache-storage
-    volumes:
-      - ./cache-storage/:/cache-storage
+      maven-cache-server.storeType: S3
+      maven-cache-server.baseFolderToStore: YOUR_BUCKET_PATH
+      aws.accessKeyId: YOUR_ACCESS_KEY
+      aws.secretAccessKey: YOUR_SECRET_KEY
+      aws.region: YOUR_REGION
