@@ -1,7 +1,7 @@
 <settings>
     <servers>
         <server>
-            <id>cache</id>
+            <id>cache-remote-server</id>
             <username>admin</username>
             <password>admin</password>
         </server>
