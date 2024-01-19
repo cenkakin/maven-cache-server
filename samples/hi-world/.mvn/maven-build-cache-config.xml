@@ -3,7 +3,7 @@
 
     <configuration>
         <validateXml>true</validateXml>
-        <remote enabled="false" id="cache">
+        <remote enabled="false" id="cache-remote-server">
             <url>http://localhost:8080</url>
         </remote>
     </configuration>
