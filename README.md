@@ -1,6 +1,8 @@
 # maven-cache-server
 
-This is a simple Spring application that can function as a remote Maven cache server.
+This is a simple Spring application that can function as a remote Maven cache server. 
+
+This project enables using a Maven cache to cache files locally or remotely in AWS S3.
 
 ## Quickstart
 
@@ -59,7 +61,7 @@ in [application.yml](src/main/resources/application.yml) file.
 
 ## How to test a remote cache server with the sample project locally
 
-- Run the remote cache server via using either:
+- Run the remote cache server using either:
 
     - Maven run command or IDE as instructed in the previous section
 
